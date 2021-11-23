@@ -8,7 +8,61 @@
     <link rel=stylesheet href="./stylesheet.css">
 </head>
 <body>
-    <h1>Museum Online Javascript</h1>
+    <h1 id="kopje">Museum Online Javascript</h1>
+    <button id="mkBlauw">blauw</button>
+    <button id="mkGroen">groen</button>
+    <button id="mkZwart">zwart</button>
+    <button id="mkWit">wit</button>
     
+    <script>
+       const kopje = document.getElementById("kopje");
+       const mkBlauw = document.getElementById("mkBlauw");
+       const mkGroen = document.getElementById("mkGroen");
+       const mkZwart = document.getElementById("mkZwart");
+       const mkWit = document.getElementById("mkWit");
+
+        kopje.style.backgroundColor = "red";
+
+        kopje.addEventListener('click', voeruitknopje);
+        mkBlauw.addEventListener('click', voeruitBlauw);
+        mkGroen.addEventListener('click', voeruitGroen);
+        mkZwart.addEventListener('click', voeruitZwart);
+        mkWit.addEventListener('click', voeruitWit);
+
+        function voeruitknopje(){
+            kopje.style.backgroundColor = "yellow";
+            kopje.style.color = "black";
+        }
+
+        function voeruitBlauw(){
+            document.body.style.backgroundColor = "lightblue";
+            document.body.style.color = "white";
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+        }
+
+        function voeruitGroen(){
+            document.body.style.backgroundColor = "lightgreen";
+            document.body.style.color = "white";
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+        }
+
+        function voeruitZwart(){
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+            kopje.style.backgroundColor = "white";
+            kopje.style.color = "black";
+        }
+
+        function voeruitWit(){
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "white";
+            kopje.style.backgroundColor = "black";
+            kopje.style.color = "white";
+        }
+
+    </script>
+
 </body>
 </html>
