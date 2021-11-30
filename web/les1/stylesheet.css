@@ -1,7 +1,26 @@
 body {
-    background-color: aqua;
+    background-color: aqua;     
 }
 
 h1 {
     text-align: center;
+}
+
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12em;
+    height: 4em;
+    padding: 10px;
+    border: 2px black solid;
+    margin:auto;
+    display:block;
+    margin-bottom: 1rem;
+}
+
+.choice:hover{
+    cursor:pointer;
+    background-color: mediumvioletred;
+    color:orange;
 }
