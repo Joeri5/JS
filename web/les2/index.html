@@ -4,89 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS BOX</title>
     <link rel="stylesheet" href="style.css">
+    <title>Les2 - Boodschappen</title>
 </head>
 <body>
-    <h1>
-        Les 13 opdracht 2
-    </h1>
-    <h2>Klik op de knoppen om erachter te komen wat ze doen.</h2>
-    <script>
-        //function to change background color
-        function changeBg(color) {
-          document.body.style.backgroundColor = color;
-        }
-        
-        // create button
-        var blueButton = document.createElement("button");
-        blueButton.textContent = "Red";
-        
-        // add button to page
-        var body = document.getElementsByTagName("body")[0];
-        body.appendChild(blueButton);
-        
-        //add event listener
-        blueButton.addEventListener("click", () => {
-          changeBg("red");
-        });
-    </script>
-    <script>
-        //function to change background color
-        function changeBg(color) {
-          document.body.style.backgroundColor = color;
-        }
-        
-        // create button
-        var blueButton = document.createElement("button");
-        blueButton.textContent = "Green";
-        
-        // add button to page
-        var body = document.getElementsByTagName("body")[0];
-        body.appendChild(blueButton);
-        
-        //add event listener
-        blueButton.addEventListener("click", () => {
-          changeBg("green");
-        });
-    </script>
-    <script>
-        //function to change background color
-        function changeBg(color) {
-          document.body.style.backgroundColor = color;
-        }
-        
-        // create button
-        var blueButton = document.createElement("button");
-        blueButton.textContent = "Blue";
-        
-        // add button to page
-        var body = document.getElementsByTagName("body")[0];
-        body.appendChild(blueButton);
-        
-        //add event listener
-        blueButton.addEventListener("click", () => {
-          changeBg("blue");
-        });
-    </script>
-    <script>
-        //function to change background color
-        function changeBg(color) {
-          document.body.style.backgroundColor = color;
-        }
-        
-        // create button
-        var blueButton = document.createElement("button");
-        blueButton.textContent = "White";
-        
-        // add button to page
-        var body = document.getElementsByTagName("body")[0];
-        body.appendChild(blueButton);
-        
-        //add event listener
-        blueButton.addEventListener("click", () => {
-          changeBg("white");
-        });
-    </script>
+    <h1>Boodschappen sorteren</h1>
+
+    <div id="boodschappen">
+        <button onclick="zetInFruitLa('Appel')">Appel</button>
+        <button onclick="zetInGroentenLa('Sla')">Sla</button>
+        <button onclick="zetInFruitLa('Banaan')">Banaan</button>
+        <button onclick="zetInFruitLa('Kiwi')">Kiwi</button>
+        <button onclick="zetInGroentenLa('Broccoli')">Broccoli</button>
+        <button onclick="zetInGroentenLa('Spruitjes')">Spruitjes</button>
+    </div>
+
+    <div id="koelkast">
+        <section id="groenten">
+            <h2>Groenten</h2>
+        </section>
+        <section id="fruit">
+            <h2>Fruit</h2>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
