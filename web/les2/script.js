@@ -1,5 +1,6 @@
 const groentevak = document.getElementById('groenten');
 const fruitvak = document.getElementById('fruit');
+const appel = document.getElementById('appel')
 
 function zetInFruitLa(fruit) {
     console.log(fruit);
