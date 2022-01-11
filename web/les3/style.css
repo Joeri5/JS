@@ -1,9 +1,41 @@
 body {
-  background: aliceblue;
+  text-align: center;
+  background: #ffefba;
+  background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
+  background: linear-gradient(to right, #ffffff, #ffefba);
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 #container {
-  background: aqua;
-  width: 700px;
-  margin: auto;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+  border-radius: 15px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+#myImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+#myTitle {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  font-family: "EB Garamond", serif;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: black;
+  color: white;
 }
